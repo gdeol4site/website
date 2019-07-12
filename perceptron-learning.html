@@ -13118,7 +13118,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Briefly,-what-is-a-perceptron?">Briefly, what is a perceptron?<a class="anchor-link" href="#Briefly,-what-is-a-perceptron?">&#182;</a></h1><p>A neuron is the basic functioning unit of the brain, similarly a perceptron is the basic functioning unit of a neural network. In this post I’ll briefly cover the similarities between artificial and biological neural networks, the theory behind how perceptrons work, and lastly how to implement the algorithm in python to train it on a bioconcentration data set.</p>
 <p>In animals, a neuron receives input from the synapses of other neurons at its dendrites. These tree like structures take the input signals and amalgamate them in the cell body, also known as a soma. Once the summation of signals happens in the soma, gated ion channels will open or remain closed depending on whether the signal breaches a threshold value — causing the neuron to fire along the axon or remain static. The neuron either fires or it doesn’t.</p>
-<p><img src="perceptron.png"></p>
+<p><img src="images/perceptron.png"></p>
 
 </div>
 </div>
@@ -13130,7 +13130,7 @@ div#notebook {
 <h3 id="Input-&amp;-bias:">Input &amp; bias:<a class="anchor-link" href="#Input-&amp;-bias:">&#182;</a></h3><p>The dendrite of the biological neuron accepts input as neurotransmitters from connecting synapses. The counterpart in the perceptron model is the input (a feature used for the classification) multiplied by it’s respective weight. The weights are values which change over time when training the model as they update in the “learning” phase when an error occurs during training. A bias is added as a special input to shift the decision boundary by translating points left or right. The summation equation below shows how the inputs, weights, and bias fit together.
 <br>
 <br>
-<img src="summation.png">
+<img src="images/summation.png">
 <br>
 <br>
 In the image below is a sigmoid curve and if we were to change the weights we could alter the steepness of the slope but to actually shift the curve left or right you would need to add a bias. Translating all the points in a certain direction using bias can increase accuracy by helping separate the hyperplane.
@@ -13143,7 +13143,7 @@ In the image below is a sigmoid curve and if we were to change the weights we co
 <h3 id="Activation-function:">Activation function:<a class="anchor-link" href="#Activation-function:">&#182;</a></h3><p>The summation of excitatory and inhibiting ions in the soma of a neuron results in an action potential. If the action potential is excitatory and breaches the threshold value — a signal is fired. In an artificial neuron the activation function calculates the net output of the summed inputs. The perceptron is effectively the model’s decision maker and uses the heaviside function, which is also known as a step function, to calculate a predicted binary output. Below is the step function that is most commonly used:
 <br>
 <br>
-<img src="stepfunc.png">
+<img src="images/stepfunc.png">
 <br>
 <br>
     θ is the activation function
