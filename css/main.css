@@ -7030,6 +7030,20 @@ html {
   div.screen-size-lg {
     font-size: 8.5vw; } }
 
+@media screen and (max-width: 768px) {
+  div.project-screen-size-sm {
+    font-size: 8vw; } }
+
+/* If the screen size is 992px wide or more, set the font-size of <div> to ~5.7rem */
+@media screen and (min-width: 991px) {
+  div.project-screen-size-lg {
+    font-size: 4.5rem; } }
+
+/* If the screen size is 770px wide and less than 770px, set the font-size of <div> to 8.5vw */
+@media screen and (max-width: 991px) and (min-width: 769px) {
+  div.project-screen-size-lg {
+    font-size: 8.5vw; } }
+
 .ico-pad {
   padding-left: 9vw; }
 
@@ -7152,3 +7166,35 @@ video {
 
 .button-padding-top {
   padding-top: 15px; }
+
+.project-lg-text {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  padding-bottom: 1.6rem;
+  padding-top: 1.2rem; }
+
+.project-card-header-title {
+  align-items: center;
+  color: #363636;
+  display: flex;
+  flex-grow: 1;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0.75rem; }
+
+.card-header-title.is-centered {
+  justify-content: center; }
+
+.image {
+  display: block;
+  position: relative; }
+
+.image img {
+  display: block;
+  height: auto;
+  width: 100%; }
+
+.image.is-256x256 {
+  height: 256px;
+  width: 256px; }
